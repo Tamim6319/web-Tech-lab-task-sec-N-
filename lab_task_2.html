@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">Full Name: </label>
+            <input type="text" name="fname" placeholder="Enter Your Full Name" required>
+
+            <br><br>
+
+            <label for="Id">Student ID: </label>
+            <input type="text" name="Id" placeholder="Enter Your Student Id" required>
+
+            <br><br>
+
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" placeholder="Enter Your Email Address" required>
+
+
+            <br><br>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" placeholder="Enter Your Phone Number" required>
+
+            <br><br>
+
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" name="dob" id="dob" required>
+
+            <br> <br>
+            <label>Gender: </label>
+            <input type="radio" id="male" name="gender" value="Male" <label for="male"> Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female" <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" <label for="other">Other</label>
+
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <legend>Academic Information</legend>
+            <label for="department">Deparment: </label>
+
+            <select id="department" name="department">
+               
+                <option value="CSE" selected>CSE</option>
+                <option value="EEE" selected>EEE</option>
+                <option value="BBA" selected>BBA</option>
+                <option value="English" selected>English</option>
+                <option value="Civil Engineering" selected>Civil Engineering</option>
+                 <option value="Select An Option" selected>Select An Option</option>
+            </select>
+
+            <br> <br>
+
+            <label for="semester">Semester: </label>
+            <select id="semester" name="semester">
+                
+                <option value="1st Semester" selected>1st Semester</option>
+                 <option value="2nd Semester" selected>2nd Semester</option>
+                  <option value="3rd Semester" selected>3rd Semester</option>
+                   <option value="4th Semester" selected>4th Semester</option>
+                    <option value="5th Semester" selected>5th Semester</option>
+                     <option value="6th Semester" selected>6th Semester</option>
+                      <option value="7th Semester" selected>7th Semester</option>
+                       <option value="8th Semester" selected>8th Semester</option>
+                       <option value="Select A Semester" selected>Select A Semester</option>
+            </select>
+</fieldset>
+ <br>
+ <fieldset>
+
+              <legend>Skills</legend>
+            <label for="skills">Select Programming Languages Known: </label><br>
+            <input type="checkbox" id="C" name="language" value="C">
+            <label for="C">C</label> <br>
+            
+             <input type="checkbox" id="C++" name="language" value="C++">
+            <label for="C++">C++</label> <br>
+
+             <input type="checkbox" id="java" name="language" value="java">
+            <label for="java">Java</label> <br>
+
+            <input type="checkbox" id="python" name="language" value="python">
+            <label for="python">Python</label> <br>
+
+             <input type="checkbox" id="javaScript" name="language" value="javaScript">
+            <label for="javaScript">JavaScript</label> <br>
+
+</fieldset>
+ <br>
+ <fieldset>
+
+    
+
+            <legend><b>Additional Information</b></legend>
+
+            <label for="address">Address</label><br>
+    <textarea id="address" name="address" rows="4" cols="40"></textarea><br>
+
+            <label for="photo">Upload Student Photo: </label><br>
+            <input type="file" id="photo" name="photo"><br><br>
+
+            <label for="comments">Comments</label><br>
+    <textarea id="comments" name="comments" maxlength="200"></textarea><br>
+
+
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+
+    </form>
+
+</body>
+
+</html>
