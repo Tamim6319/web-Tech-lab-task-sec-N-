@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Club Membership Registration - AIUB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>University Club Membership Registration</h1>
+    <p class="subtitle">AIUB Student Affairs Office</p>
+
+    <form id="registrationForm" novalidate>
+
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+        <span class="error" id="firstNameError"></span>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+        <span class="error" id="lastNameError"></span>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@student.aiub.edu">
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <small class="hint">Min 8 characters, at least 1 special character</small>
+        <span class="error" id="passwordError"></span>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+        <span class="error" id="genderError"></span>
+      </div>
+
+      <!-- Interested Clubs -->
+      <div class="form-group">
+        <label>Interested Clubs</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="clubs" value="IT Club"> IT Club</label>
+          <label><input type="checkbox" name="clubs" value="Sports Club"> Sports Club</label>
+          <label><input type="checkbox" name="clubs" value="Debate Club"> Debate Club</label>
+        </div>
+        <span class="error" id="clubsError"></span>
+      </div>
+
+      <!-- Club Category -->
+      <div class="form-group">
+        <label for="category">Club Category</label>
+        <select id="category" name="category">
+          <option value="" disabled selected>-- Select Category --</option>
+          <option value="Academic">Academic</option>
+          <option value="Social Service">Social Service</option>
+        </select>
+        <span class="error" id="categoryError"></span>
+      </div>
+
+      <!-- Why do you want to join -->
+      <div class="form-group">
+        <label for="reason">Why do you want to join?</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Minimum 20 characters"></textarea>
+        <span class="error" id="reasonError"></span>
+      </div>
+
+      <button type="submit" id="submitBtn">Register</button>
+
+      <p class="success" id="successMessage"></p>
+    </form>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
